@@ -1,0 +1,91 @@
+$font-stack : Arial, Helvetica, Sans-serif;
+$primary-blue : rgb(87, 87, 255);
+$primary-sky-blue : rgb(132, 198, 226);
+$primary-orange : rgb(255, 123, 0);
+
+*{
+    box-sizing : border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: $font-stack;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 2vh 15vw;
+    background-color: $primary-blue;
+    justify-content: center;
+    align-content: center;
+}
+
+
+#h-right{
+    display: grid;
+    align-content: center;
+    ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        font-size: 20px;
+        text-align: center;
+        align-content: center;
+    }
+}
+
+
+section{
+    background: $primary-blue;
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    padding: 2vh 15vw;
+    justify-content: space-between;
+}
+
+#s-left{
+    display: grid;
+    align-content: center;
+    h1{
+        font-size: 3.5rem;
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    p{
+        font-size: 18px;
+        grid-column: 1/6;
+        grid-row: 3/4;
+        margin: 1vh 0;
+    }
+    a{    
+        grid-row-start: 4;
+        font-size: large;
+        border-radius: 5px;
+        text-align: center;
+        padding: 1vw;
+        
+    }
+}
+
+#learn-more{
+    background: $primary-sky-blue;
+    margin-right: 5px;
+}
+
+#sign-up{
+    background: $primary-orange;
+    
+}
+
+#s-right{
+    text-align: center;
+}
+
+img{
+    width: 78%;
+}
+
+
+
+
